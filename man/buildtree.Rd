@@ -20,7 +20,7 @@ buildtree(x, treeStruct, lambda_0 = 10, lambda_f = 0.01, e_0 = 0.5,
 
 \item{e_f}{Lower adaptation step parameter. Default = 0.05.}
 
-\item{jMax}{Number of iterations. Default = 40.}
+\item{jMax}{Number of iterations. Default = 40000.}
 
 \item{plot}{logical. If TRUE (the default) the final tree is plotted.}
 }
@@ -31,7 +31,7 @@ Returns a list object containing the initial input scenarios, the input scenario
 Uses the neural gas method to build a scenario tree. Useful for scenario reduction for stochastic optimization problems.
 }
 \examples{
-# Generate some 25 random realizations of length 4 and fit scenario tree.
+# Generate some 25 random realizations of length 4 and reduce to scenario tree.
 scenarios <- matrix(rnorm(100),ncol=25)
 treeStruct <- rbind(c(1, 1, 1, 1, 1),
                     c(2, 2, 7, 7, 11),
