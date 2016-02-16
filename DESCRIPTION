@@ -11,5 +11,7 @@ URL: https://cran.r-project.org/package=reservoir
 Description: Uses the neural gas method to construct a scenario tree for use in multi-stage stochastic optimization. The scenario tree structure must be predefined.
 License: GPL (>=2)
 LazyData: yes
-Imports:
+Imports: 
     graphics
+Suggests: knitr
+VignetteBuilder: knitr
