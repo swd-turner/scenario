@@ -1,5 +1,5 @@
 #' @title Build a scenario tree with a predefined nodal structure.
-#' @description Uses the neural gas method to build a scenario tree. Useful for scenario reduction for stochastic optimization problems.
+#' @description Uses the neural gas method to build a scenario tree.
 #' @param x               Matrix of initial scenarios, realizations or ensemble members. Each column stores a scenario, with number of rows equal to number of time steps.
 #' @param treeStruct      Matrix defining the nodal structure of the tree (see example). This is a scenario tree nodal partition matrix.
 #' @param lambda_0        Upper neighbourhood range parameter. Default = 10.
@@ -9,6 +9,8 @@
 #' @param jMax            Number of iterations. Default = 40000.
 #' @param plot            logical. If TRUE (the default) the final tree is plotted.
 #' @return Returns a list object containing the initial input scenarios, the input scenarios tree structure, the values of the final reduced scenario tree, and the tree branch probabilities at the end nodes.
+#' @references Xu, B., Zhong, P.A., Zambon, R.C., Zhao, Y., Yeh, W. (2015) Scenario tree reduction in stochastic programming with recourse for hydropower operations, Water Resources Research, 51, 6359-6380.
+#' @references Dupacova, Jitka, Giorgio Consigli, and Stein W. Wallace. "Scenarios for multistage stochastic programs." Annals of operations research 100.1-4 (2000): 25-53.
 #' @examples # Generate some 25 random realizations of length 4 and reduce to scenario tree.
 #' scenarios <- matrix(rnorm(100),ncol=25)
 #' treeStruct <- rbind(c(1, 1, 1, 1, 1),

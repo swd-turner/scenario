@@ -28,7 +28,7 @@ buildtree(x, treeStruct, lambda_0 = 10, lambda_f = 0.01, e_0 = 0.5,
 Returns a list object containing the initial input scenarios, the input scenarios tree structure, the values of the final reduced scenario tree, and the tree branch probabilities at the end nodes.
 }
 \description{
-Uses the neural gas method to build a scenario tree. Useful for scenario reduction for stochastic optimization problems.
+Uses the neural gas method to build a scenario tree.
 }
 \examples{
 # Generate some 25 random realizations of length 4 and reduce to scenario tree.
@@ -39,5 +39,10 @@ treeStruct <- rbind(c(1, 1, 1, 1, 1),
                     c(4, 6, 9, 10, 13)
                     )
 tree <- buildtree(scenarios, treeStruct, jMax = 1000)
+}
+\references{
+Xu, B., Zhong, P.A., Zambon, R.C., Zhao, Y., Yeh, W. (2015) Scenario tree reduction in stochastic programming with recourse for hydropower operations, Water Resources Research, 51, 6359-6380.
+
+Dupacova, Jitka, Giorgio Consigli, and Stein W. Wallace. "Scenarios for multistage stochastic programs." Annals of operations research 100.1-4 (2000): 25-53.
 }
 

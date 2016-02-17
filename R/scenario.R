@@ -1,6 +1,5 @@
-#' scenario: Scenario tree construction for multi-stage stochastic programming.
+#' scenario: Construct reduced trees with a predefined nodal structures
 #'
-#' Construct a scenario-tree of pre-defined nodal structure.
 
 #' The \code{\link{buildtree}} function uses the neural gas method to generate a scenario tree of predefined nodal structure. The \code{\link{checktree}} function plots a scenario tree structure as defined by a nodal parition matrix.
 #' @docType package

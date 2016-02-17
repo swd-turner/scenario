@@ -1,6 +1,6 @@
 Package: scenario
 Type: Package
-Title: Construct a scenario tree with a predefined structure for use in multi-stage stochastic programming
+Title: Construct reduced trees with a predefined nodal structures
 Version: 1.0
 Date: 2016-02-15
 Authors@R: c(
@@ -8,7 +8,7 @@ Authors@R: c(
     person("Stefano", "Galelli", , "stefano_galelli@sutd.edu.sg", "aut")
     )
 URL: https://cran.r-project.org/package=reservoir
-Description: Uses the neural gas method to construct a scenario tree for use in multi-stage stochastic optimization. The scenario tree structure must be predefined.
+Description: Uses the neural gas method to construct a scenario tree for use in multi-stage stochastic programming. The primary input is a set of initial scenarios or realizations of a disturbance. The scenario tree nodal structure must be predefined using a scenario tree nodal parition matrix.
 License: GPL (>=2)
 LazyData: yes
 Imports: graphics

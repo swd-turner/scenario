@@ -1,6 +1,6 @@
 #' @title Check the tree structure implied by a scenario tree nodal partition matrix.
-#' @description Returns a schematic showing the nodal structure of a scenario tree defined using a scenario tree nodal partition matrix.
-#' @param treeStruct      Matrix defining the nodal structure of the tree (see example).
+#' @description Returns a plot showing the nodal structure (not values) of a scenario tree defined using a scenario tree nodal partition matrix.
+#' @param treeStruct      Matrix defining the nodal structure of the tree.
 #' @return Returns a plot of the scenario tree structure implied by the input nodal partition matrix.
 #' @references Dupacova, Jitka, Giorgio Consigli, and Stein W. Wallace. "Scenarios for multistage stochastic programs." Annals of operations research 100.1-4 (2000): 25-53.
 #' @examples

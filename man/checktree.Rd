@@ -7,13 +7,13 @@
 checktree(treeStruct)
 }
 \arguments{
-\item{treeStruct}{Matrix defining the nodal structure of the tree (see example).}
+\item{treeStruct}{Matrix defining the nodal structure of the tree.}
 }
 \value{
 Returns a plot of the scenario tree structure implied by the input nodal partition matrix.
 }
 \description{
-Returns a schematic showing the nodal structure of a scenario tree defined using a scenario tree nodal partition matrix.
+Returns a plot showing the nodal structure (not values) of a scenario tree defined using a scenario tree nodal partition matrix.
 }
 \examples{
 treeStruct <- rbind(c(1, 1, 1, 1, 1),
