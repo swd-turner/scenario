@@ -70,7 +70,7 @@ buildtree <- function(x, treeStruct, lambda_0 = 10, lambda_f = 0.01,
 
   ## -------- OUTPUT -------- ##
   if (plot) {
-    matplot(x, type = "l", col = "grey", lty = 2, ylab = "Value", xlab = "Stage")
+    matplot(x, type = "l", col = "grey", lty = 2, ylab = "Disturbance", xlab = "Time step")
     matlines(tree, pch = 3, lty = 1)
   }
   output <- list(treeStruct,tree, branchProbs)

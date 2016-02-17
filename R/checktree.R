@@ -23,7 +23,7 @@ checktree <- function(treeStruct){
     }
   }
   matplot(centroids, type = "b", lwd=2, pch = 15,
-          xlab = "time step", xaxt="n",
+          xlab = "Time step", xaxt="n",
           main = "Scenario tree structure",
           yaxt="n", ylab = "")
   axis(1, at = 1:nrow(treeStruct), labels = 1:nrow(treeStruct))

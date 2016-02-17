@@ -1,7 +1,7 @@
 Package: scenario
 Type: Package
-Title: Construct a scenario tree with a predefined structure for use in multi-stage stochastic optimization
-Version: 0.1
+Title: Construct a scenario tree with a predefined structure for use in multi-stage stochastic programming
+Version: 1.0
 Date: 2016-02-15
 Authors@R: c(
     person("Sean", "Turner", , "swd.turner@gmail.com", c("aut", "cre")),
@@ -11,7 +11,6 @@ URL: https://cran.r-project.org/package=reservoir
 Description: Uses the neural gas method to construct a scenario tree for use in multi-stage stochastic optimization. The scenario tree structure must be predefined.
 License: GPL (>=2)
 LazyData: yes
-Imports: 
-    graphics
+Imports: graphics
 Suggests: knitr
 VignetteBuilder: knitr
