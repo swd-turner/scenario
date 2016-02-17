@@ -8,9 +8,9 @@ buildtree(x, treeStruct, lambda_0 = 10, lambda_f = 0.01, e_0 = 0.5,
   e_f = 0.05, jMax = 40000, plot = TRUE)
 }
 \arguments{
-\item{x}{Matrix of initial scenarios, realizations or ensemble members. Each column stores a scenario.}
+\item{x}{Matrix of initial scenarios, realizations or ensemble members. Each column stores a scenario, with number of rows equal to number of time steps.}
 
-\item{treeStruct}{Matrix defining the nodal structure of the tree (see example).}
+\item{treeStruct}{Matrix defining the nodal structure of the tree (see example). This is a scenario tree nodal partition matrix.}
 
 \item{lambda_0}{Upper neighbourhood range parameter. Default = 10.}
 

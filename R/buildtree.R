@@ -1,7 +1,7 @@
 #' @title Build a scenario tree with a predefined nodal structure.
 #' @description Uses the neural gas method to build a scenario tree. Useful for scenario reduction for stochastic optimization problems.
-#' @param x               Matrix of initial scenarios, realizations or ensemble members. Each column stores a scenario.
-#' @param treeStruct      Matrix defining the nodal structure of the tree (see example).
+#' @param x               Matrix of initial scenarios, realizations or ensemble members. Each column stores a scenario, with number of rows equal to number of time steps.
+#' @param treeStruct      Matrix defining the nodal structure of the tree (see example). This is a scenario tree nodal partition matrix.
 #' @param lambda_0        Upper neighbourhood range parameter. Default = 10.
 #' @param lambda_f        Lower neighborhood range paramger. Default = 0.01.
 #' @param e_0             Upper adaptation step parameter. Default = 0.5.
