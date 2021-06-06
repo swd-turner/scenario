@@ -2,7 +2,7 @@ Package: scenario
 Type: Package
 Title: Construct Reduced Trees with Predefined Nodal Structures
 Version: 1.1
-Date: 2020-06-06
+Date: 2021-06-06
 Authors@R: c(
     person("Sean", "Turner", , "sean.turner@pnnl.gov", c("aut", "cre")),
     person("Stefano", "Galelli", , "stefano_galelli@sutd.edu.sg", "aut")

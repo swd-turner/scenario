@@ -1,9 +1,7 @@
-This is the first version of "scenario" submitted to CRAN.
+Update 2021-06-06 in response to knitr dependency update.
 
 ## Test environments
-* x86_64-w64-mingw32 (64-bit), R version 3.2.1
-* x86_64-pc-linux-gnu, R version 3.2.2
-* Mac OS X Yosemite x86_64-apple-darwin13.4.0 (64-bit), R version 3.2.1
+* Mac OS X Mojave v10.14.6, R version 4.0.3
 
 ## R CMD check results
 There were no ERRORs, WARNINGs, or NOTEs.
