@@ -1,10 +1,10 @@
 Package: scenario
 Type: Package
 Title: Construct Reduced Trees with Predefined Nodal Structures
-Version: 1.0
-Date: 2016-02-15
+Version: 1.1
+Date: 2020-06-06
 Authors@R: c(
-    person("Sean", "Turner", , "swd.turner@gmail.com", c("aut", "cre")),
+    person("Sean", "Turner", , "sean.turner@pnnl.gov", c("aut", "cre")),
     person("Stefano", "Galelli", , "stefano_galelli@sutd.edu.sg", "aut")
     )
 URL: https://github.com/swd-turner/scenario
@@ -16,5 +16,9 @@ Description: Uses the neural gas algorithm to construct
 License: GPL (>=2)
 LazyData: yes
 Imports: graphics
-Suggests: knitr
+Suggests:
+    knitr,
+    rmarkdown
 VignetteBuilder: knitr
+RoxygenNote: 7.1.1
+Encoding: UTF-8
