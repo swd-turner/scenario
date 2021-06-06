@@ -7,7 +7,7 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-This aim of this vignette is to introduce you to the neural gas method for scenario reduction, and to show you how to use the `buildtree` and `checktree` functions in the `scenario` package to construct scenario trees with predefined nodal structures. Many optimization problems need to allow for *recourse* in the contol, or the ability of the operator to change control decisions as uncertainty is reduced through time. Accounting for this in stochastic programming can be achieved by transforming input scenarios of the disturbance into a scenario tree. One way of doing this is by applying the ***neural gas method***. This approach differs from other methods in that it allows the user to predefine and set the nodal structure of the tree.
+This aim of this vignette is to introduce you to the neural gas method for scenario reduction, and to show you how to use the `buildtree` and `checktree` functions in the `scenario` package to construct scenario trees with predefined nodal structures. Many optimization problems need to allow for *recourse* in the control, or the ability of the operator to change control decisions as uncertainty is reduced through time. Accounting for this in stochastic programming can be achieved by transforming input scenarios of the disturbance into a scenario tree. One way of doing this is by applying the ***neural gas method***. This approach differs from other methods in that it allows the user to predefine and set the nodal structure of the tree.
 
 ## What is a scenario tree?
 
@@ -83,7 +83,7 @@ From [Wikipedia](https://en.wikipedia.org/wiki/Neural_gas):
 
 > The neural gas is a simple algorithm for finding optimal data representations based on feature vectors. The algorithm was coined "neural gas" because of the dynamics of the feature vectors during the adaptation process, which distribute themselves like a gas within the data space.
 
-The neural gas algorithm can be used to define the node values (and scenario probabilites) of a given scenario tree structure to best describe a set of input scenarios (which we will term "realizations" to distinguish from the scenarios belonging to the scenario tree). When applied to generation of a scenario tree with a predefined nodal structure, the neural gas algorithm requires three types of input. First, we need an initial set of realizations of length $T$, which we will term $X$ ($X$ may be an ensemble of forecasts, or simply a record of historical observed disturbances). Second, we need to define the desired scenario tree structure and then code it as a scenario tree nodal partition matrix, as described above. Third, we need some input parameters that define the resolution of the iterations taken by the algorithm. These are defaulted to recommended values in the `buildtree` function; the `jMax` parameter can be altered to trade off accurracy and computation time.
+The neural gas algorithm can be used to define the node values (and scenario probabilities) of a given scenario tree structure to best describe a set of input scenarios (which we will term "realizations" to distinguish from the scenarios belonging to the scenario tree). When applied to generation of a scenario tree with a predefined nodal structure, the neural gas algorithm requires three types of input. First, we need an initial set of realizations of length $T$, which we will term $X$ ($X$ may be an ensemble of forecasts, or simply a record of historical observed disturbances). Second, we need to define the desired scenario tree structure and then code it as a scenario tree nodal partition matrix, as described above. Third, we need some input parameters that define the resolution of the iterations taken by the algorithm. These are defaulted to recommended values in the `buildtree` function; the `jMax` parameter can be altered to trade off accuracy and computation time.
 
 The following steps walk through the algorithm using a simple, stylized example. Here we generate the realizations artificially from a known tree, so as to illustrate the efficacy of the algorithm.
 
@@ -182,7 +182,7 @@ $\lambda(j) = \lambda_0 \cdot (\lambda_f/\lambda_0)^{j/j_{max}}$
 
 After each node is adjusted (by adding $\Delta s_{i,t}$ to the previous value $s_{i,t}$), we add 1 to $j$ and start the process again from step 2. The iteration is completed when $j = j_{max}$.
 
-#### 5. Compute probabilites
+#### 5. Compute probabilities
 
 Once the scenario tree has converged, the probabilities of each scenario are computed by assigning to each scenario a realization, based on lowest Euclidean distance. Assuming all realizations are equiprobably, the probability of any scenario is simply the proportion of total realizations that lie closer to it than any other scenario.
 
