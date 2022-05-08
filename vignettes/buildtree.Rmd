@@ -1,8 +1,8 @@
 ---
-title: "Building a reduced scenario tree for multi-stage stochastic programming"
+title: "Building a reduced scenario tree"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Building a reduced scenario tree for multi-stage stochastic programming}
+  %\VignetteIndexEntry{Building a reduced scenario tree}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---

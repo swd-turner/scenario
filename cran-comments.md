@@ -1,4 +1,7 @@
-Update 2021-06-06 in response to knitr dependency update.
+Update 2022-05-08 in response to email from CRAN. Fix vignette title.
+
+## Updates
+Omitted ‘LazyData’ from DESCRIPTION.
 
 ## Test environments
 Ran all checks provided by devtools::release().

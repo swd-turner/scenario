@@ -14,7 +14,6 @@ Description: Uses the neural gas algorithm to construct
     of a disturbance. The scenario tree nodal structure must be
     predefined using a scenario tree nodal partition matrix.
 License: GPL (>=2)
-LazyData: yes
 Imports: graphics
 Suggests:
     knitr,
