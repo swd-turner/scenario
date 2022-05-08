@@ -2,7 +2,7 @@ Package: scenario
 Type: Package
 Title: Construct Reduced Trees with Predefined Nodal Structures
 Version: 1.0.1
-Date: 2021-06-06
+Date: 2022-05-08
 Authors@R: c(
     person("Sean", "Turner", , "sean.turner@pnnl.gov", c("aut", "cre")),
     person("Stefano", "Galelli", , "stefano_galelli@sutd.edu.sg", "aut")
@@ -15,9 +15,5 @@ Description: Uses the neural gas algorithm to construct
     predefined using a scenario tree nodal partition matrix.
 License: GPL (>=2)
 Imports: graphics
-Suggests:
-    knitr,
-    rmarkdown
-VignetteBuilder: knitr
-RoxygenNote: 7.1.1
+RoxygenNote: 7.1.2
 Encoding: UTF-8

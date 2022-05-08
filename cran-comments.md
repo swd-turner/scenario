@@ -1,4 +1,4 @@
-Update 2022-05-08 in response to email from CRAN. Fix vignette title.
+Update 2022-05-08 in response to email from CRAN. Removed vignette.
 
 ## Updates
 Omitted ‘LazyData’ from DESCRIPTION.
